@@ -70,35 +70,35 @@ function App() {
       id: "readme1",
       title: "Vinllage",
       desc: "AI 기반 카메라 인식을 통해 쓰레기 카테고리를 안내하는 친환경 웹 서비스",
-      img: "/images/vinllageMain2.gif",
+      img: "./images/vinllageMain2.gif",
       link: "https://vinllage.xyz/"
     },
     {
       id: "readme2",
       title: "맹글맹글",
       desc: "전이 학습 기반 자연어 처리 AI로 다양한 대화 경험을 제공하는 채팅 웹 서비스",
-      img: "/images/maengle.png",
+      img: "./images/maengle.png",
       link: "https://maengle.xyz/"
     },
     {
       id: "readme3",
       title: "Quick Draw",
       desc: "AI가 사용자의 낙서를 인식하여 맞추는 게임형 웹 서비스",
-      img: "/images/quickDraw.png",
+      img: "./images/quickDraw.png",
       link: null
     },
     {
       id: "readme4",
       title: "Chat Bot",
       desc: "React 기반으로 사용자의 메시지를 AI 서버에 전달하고 응답을 실시간 표시하는 웹 챗봇 UI",
-      img: "/images/chatBot.png",
+      img: "./images/chatBot.png",
       link: null
     },
     {
       id: "readme5",
       title: "Spring Project",
       desc: "Spring Boot와 Python ML 모델을 연동해 위치 기반 식당 추천과 당뇨병 발병 위험 예측을 제공",
-      img: "/images/restaurant2.jpg",
+      img: "./images/restaurant2.jpg",
       link: null
     }
   ];
@@ -159,16 +159,16 @@ function App() {
         <h2 className="about-heading">ABOUT</h2>
         <div className="about-wrapper">
           <div className="profile-photo">
-            <img src="/images/profile.jpg" alt="프로필 사진" />
+            <img src="./images/profile.jpg" alt="프로필 사진" />
           </div>
           <div className="profile-info">
-            <div><img src="/images/profile.png" alt="아이콘" className="icon" />이소민 (Lee Somin)</div>
-            <div><img src="/images/mobile.png" alt="아이콘" className="icon" />010-7749-1017</div>
-            <div><img src="/images/email.png" alt="아이콘" className="icon" />dlthals1204@gmail.com</div>
-            <div><img src="/images/location.png" alt="아이콘" className="icon" />인천시 미추홀구</div>
+            <div><img src="./images/profile.png" alt="아이콘" className="icon" />이소민 (Lee Somin)</div>
+            <div><img src="./images/mobile.png" alt="아이콘" className="icon" />010-7749-1017</div>
+            <div><img src="./images/email.png" alt="아이콘" className="icon" />dlthals1204@gmail.com</div>
+            <div><img src="./images/location.png" alt="아이콘" className="icon" />인천시 미추홀구</div>
             <div>
               <a href="https://github.com/leesomin1204" target="_blank">
-                <img src="/images/github.png" alt="아이콘" className="icon" />
+                <img src="./images/github.png" alt="아이콘" className="icon" />
                 github.com/leesomin1204
               </a>
             </div>
