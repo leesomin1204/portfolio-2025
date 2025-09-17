@@ -151,10 +151,9 @@
 }
 
 .project-overlay .btn-readme {
-  background: #3498db;
   padding: 8px 14px;
-  border-radius: 6px;
-  border: none;
+  border: 1px solid #fff;
+  border-radius: 1px;
   color: #fff;
   cursor: pointer;
 }
@@ -182,7 +181,9 @@
   color: white;
 }
 
-.btn-readme { background: #3498db; }
+.btn-readme { 
+  background: none; 
+}
 
 /* 모달 */
 .modal {

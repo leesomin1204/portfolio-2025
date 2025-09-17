@@ -73,7 +73,7 @@ function Projects({ projects, openReadme }) {
                       openReadme(p.id);
                     }}
                   >
-                    README
+                    자세히 보기
                   </button>
                 </a>
               ) : (
@@ -81,7 +81,7 @@ function Projects({ projects, openReadme }) {
                   <h3>{p.title}</h3>
                   <p>{p.desc}</p>
                   <button className="btn-readme" onClick={() => openReadme(p.id)}>
-                    README
+                    자세히 보기
                   </button>
                 </div>
               )}
