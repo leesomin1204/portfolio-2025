@@ -5,8 +5,8 @@
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
   position: relative;
   width: 100%;
-  max-width: 500px;  /* 프레임 최대 너비 */
-  height: 350px;     /* 프레임 높이 고정 */
+  max-width: 500px;  
+  height: 350px;   
   margin: 0 auto;
   display: flex;
   justify-content: center;
@@ -124,8 +124,8 @@
   color: #fff;
   display: flex;
   flex-direction: column;
-  justify-content: center; /* 수직 중앙 */
-  align-items: center;     /* 수평 중앙 */
+  justify-content: center; 
+  align-items: center;  
   text-align: center;
   text-decoration: none;
   opacity: 0;
@@ -153,9 +153,15 @@
 .project-overlay .btn-readme {
   padding: 8px 14px;
   border: 1px solid #fff;
+  background: none; 
   border-radius: 1px;
   color: #fff;
   cursor: pointer;
+}
+
+.project-overlay .btn-readme:hover { 
+  background: #fff;
+  color: rgba(0,0,0,0.6);
 }
 
 /* overlay a 태그 링크 클릭 시 텍스트 스타일 유지 */
@@ -178,11 +184,6 @@
   border-radius: 6px;
   cursor: pointer;
   font-weight: bold;
-  color: white;
-}
-
-.btn-readme { 
-  background: none; 
 }
 
 /* 모달 */
@@ -199,16 +200,19 @@
 
 .modal-content {
   background: white;
-  margin: 2% auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   padding: 20px;
   border-radius: 10px;
-  max-width: 50%;
+  max-width: 50%;     
   max-height: 90vh;
-  position: relative;
+  position: absolute;
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
+  box-sizing: border-box;
 }
 
 .modal .close {
@@ -258,4 +262,37 @@
 
 .readme-modal li {
   margin-bottom: 6px;
+}
+
+/* 📱 반응형 (작은 화면 대응) */
+@media (max-width: 1024px) {
+  .modal-content {
+    max-width: 70%;
+  }
+}
+
+@media (max-width: 768px) {
+  .modal-content {
+    max-width: 90%; 
+    margin: 5% auto;
+    padding: 16px;
+  }
+
+  .modal .close {
+    font-size: 24px; 
+    top: 8px; right: 12px;
+  }
+
+  .readme-modal h2 {
+    font-size: 20px;
+  }
+
+  .readme-modal h3 {
+    font-size: 16px;
+  }
+
+  .readme-modal p,
+  .readme-modal li {
+    font-size: 14px;
+  }
 }
