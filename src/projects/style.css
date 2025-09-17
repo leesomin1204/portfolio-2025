@@ -131,7 +131,6 @@
   opacity: 0;
   transition: opacity 0.3s ease;
   padding: 0;             
-  border-radius: 5px;
   z-index: 30;
 }
 

@@ -43,9 +43,9 @@ function ProjectsSection({ openReadme }) {
       id: "readme5",
       title: "Spring Project",
       desc: "Spring Boot 실습을 겸해 개발한 음식점 추천·당뇨병 자가 진단 서비스입니다.",
-      width: "100%",
-      height: "auto",
-      img: process.env.PUBLIC_URL + "/images/restaurant2.jpg",
+      width: "auto",
+      height: "300px",
+      img: process.env.PUBLIC_URL + "/images/restaurant1.png",
       link: null
     }
   ];
