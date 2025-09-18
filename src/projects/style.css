@@ -264,7 +264,6 @@
   margin-bottom: 6px;
 }
 
-/* 📱 반응형 (작은 화면 대응) */
 @media (max-width: 1024px) {
   .modal-content {
     max-width: 70%;

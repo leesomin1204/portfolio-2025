@@ -38,7 +38,7 @@ section {
 /* 선택 바 (가로 탭) */
 .skillTabActiveter {
   position: absolute;
-  bottom: 0;
+  bottom: -1.5px;
   left: 0;
   height: 2px;
   width: calc(100% / 5);
@@ -101,9 +101,16 @@ section {
 
   .skillTabActiveter {
     bottom: auto;
-    left: 0;
+    left: -1.5px;
     width: 2px;
     height: calc(100% / 5); 
     transform: translateY(calc(var(--index, 0) * 100%));
+  }
+
+    .tabContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* 세로 중앙 */
+    flex: 1; /* 남은 공간 채우기 */
   }
 }
