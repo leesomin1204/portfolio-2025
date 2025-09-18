@@ -63,7 +63,6 @@
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
 
-/* 탭 안 원 버튼 */
 .tab-buttons {
   display: flex;
   gap: 8px;
