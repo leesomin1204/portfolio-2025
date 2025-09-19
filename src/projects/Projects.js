@@ -10,20 +10,38 @@ function Projects({ projects, openReadme }) {
           <div key={p.id} className="project-card">
             <div className="project-browser-frame">
               {/* 이미지와 링크 */}
-              {p.link ? (
+              {Array.isArray(p.img) ? (
+                <div className="project-image-row">
+                  {p.img.map((src, idx) => (
+                    p.link ? (
+                      <a
+                        key={idx}
+                        href={p.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <img
+                          src={src}
+                          alt={`${p.title} ${idx + 1}`}
+                          className="project-image"
+                        />
+                      </a>
+                    ) : (
+                      <img
+                        key={idx}
+                        src={src}
+                        alt={`${p.title} ${idx + 1}`}
+                        className="project-image"
+                      />
+                    )
+                  ))}
+                </div>
+              ) : p.link ? (
                 <a href={p.link} target="_blank" rel="noopener noreferrer">
-                  <img
-                    src={p.img}
-                    alt={p.title}
-                    className="project-image"
-                  />
+                  <img src={p.img} alt={p.title} className="project-image" />
                 </a>
               ) : (
-                <img
-                  src={p.img}
-                  alt={p.title}
-                  className="project-image"
-                />
+                <img src={p.img} alt={p.title} className="project-image" />
               )}
 
               {/* 프레임 전체 overlay */}

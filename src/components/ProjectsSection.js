@@ -7,7 +7,7 @@ function ProjectsSection({ openReadme }) {
       id: "readme1",
       title: "Vinllage",
       desc: "쓰레기 카테고리를 안내하는 친환경 웹 서비스입니다.",
-      img: process.env.PUBLIC_URL + "/images/vinllageMain2.gif",
+      img: process.env.PUBLIC_URL + "/images/vinllageMain.gif",
       link: "https://vinllage.xyz/"
     },
     {
@@ -28,14 +28,17 @@ function ProjectsSection({ openReadme }) {
       id: "readme4",
       title: "Chat Bot",
       desc: "실시간 AI 응답을 제공하는 웹 챗봇 UI입니다.",
-      img: process.env.PUBLIC_URL + "/images/chatBot2.png",
+      img: process.env.PUBLIC_URL + "/images/chatBot.png",
       link: null
     },
     {
       id: "readme5",
       title: "Spring Project",
       desc: "Spring Boot 실습을 겸해 개발한 음식점 추천·당뇨병 자가 진단 서비스입니다.",
-      img: process.env.PUBLIC_URL + "/images/restaurant1.png",
+      img: [
+        process.env.PUBLIC_URL + "/images/restaurant.png",
+        process.env.PUBLIC_URL + "/images/diabetes.png"
+      ],
       link: null
     }
   ];

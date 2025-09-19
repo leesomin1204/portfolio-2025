@@ -52,10 +52,17 @@ section {
 
 /* Footer */
 .main-footer {
-  background-color: #fff;
+  background-color: #f1f1f5;
   height: 100px;
   margin-top: 40px;
+  display: flex;           
+  justify-content: center;  
+  align-items: center;    
+  color: #333;   
+  font-size: 17px;
+  text-align: center;
 }
+
 
 /* Home Section */
 .home {
