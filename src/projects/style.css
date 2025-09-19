@@ -1,98 +1,37 @@
 .project-browser-frame {
   border: 2px solid #ddd;
-  padding: 10px;
+  padding: 30px;
   background: #fefefe;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
   position: relative;
-  width: 100%;
-  max-width: 500px;  
-  height: 350px;   
-  margin: 0 auto;
+  max-width: 400px;  
+  height: 300px;   
   display: flex;
   justify-content: center;
   align-items: center;
   overflow: hidden;
 }
 
-/* 이미지 wrapper */
-.project-image-wrapper {
-  position: relative;
-  display: inline-block;
-  max-width: 90%;
-  max-height: 90%;
-  width: auto;
-  height: auto;
-  padding-top: 24px;
-}
-
-.project-image-wrapper::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 24px;
-  background: transparent;
-  z-index: 5;
-}
-
 /* 실제 이미지 */
-.project-image-wrapper img.project-image {
+.project-browser-frame img.project-image {
+  max-width: 100%;
+  max-height: 100%;
   width: 100%;
   height: auto;
-  border-radius: 0 0 5px 5px;
-  object-fit: contain;
-  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
   display: block;
+  margin: auto;
+  border-radius: 3px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
 }
-
-/* 브라우저 탭 */
-.project-tab {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 98%;
-  height: 24px;
-  background: #eee;
-  border-radius: 5px 5px 0 0;
-  display: flex;
-  align-items: center;
-  padding-left: 10px;
-  z-index: 11;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-}
-
-.tab-buttons {
-  display: flex;
-  gap: 8px;
-}
-
-.tab-btn {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  display: inline-block;
-}
-
-.tab-btn.close { background: #ff5f57; }
-.tab-btn.minimize { background: #ffbd2e; }
-.tab-btn.maximize { background: #28c840; }
 
 /* Projects Grid */
 .projects-grid {
   display: grid;
-  grid-template-columns: 1fr;
-  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 10px;  
   margin: 20px auto;
   max-width: 1100px;
-}
-
-@media (min-width: 768px) {
-  .projects-grid {
-    grid-template-columns: repeat(2, calc((100% - 2rem) / 2));
-    justify-content: center;
-  }
+  justify-content: center;
 }
 
 /* 카드 제목/설명 */
