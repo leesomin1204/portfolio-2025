@@ -129,8 +129,10 @@
   display: none;
   position: fixed;
   z-index: 1000;
-  left: 0; top: 0;
-  width: 100%; height: 100%;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
   background: rgba(0,0,0,0.6);
 }
 
@@ -143,8 +145,7 @@
   transform: translate(-50%, -50%);
   padding: 20px;
   border-radius: 10px;
-  max-width: 50%;     
-  max-height: 90vh;
+  max-width: 100%;     
   position: absolute;
   text-align: center;
   display: flex;
@@ -155,18 +156,53 @@
 
 .modal .close {
   position: absolute;
-  top: 10px; right: 15px;
+  top: 10px;
+  right: 15px;
+  width: 32px;
+  height: 32px;
   font-size: 20px;
+  color: #fff; /* 엑스 표시 색 */
+  background-color: rgba(120, 120, 120, 0.6); /* 연그레이 + 투명도 */
+  border-radius: 50%; /* 동그란 모양 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
   cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2); /* 살짝 그림자 */
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.modal .close:hover {
+  background-color: rgba(90, 90, 90, 0.8); /* 호버 시 진하게 */
+  transform: scale(1.1); /* 살짝 확대 */
 }
 
 /* README 모달 */
 .readme-modal {
   text-align: left; 
   align-items: flex-start;
+  width: 100%;
+  min-width: 300px;
   max-width: 800px; 
   max-height: 80vh;
   overflow-y: auto;
+}
+
+.readme-badge {
+  display: inline-block;
+  margin: 10px 2px;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 2px 6px;
+  border-radius: 4px;
+  background-color: #e67e22;
+  line-height: 1.5;
+}
+
+.readme-modal h2 .readme-status,
+.readme-modal h2 .readme-type {
+  color: #fff;
+  background-color: #232323;
 }
 
 .readme-modal h2 {
@@ -176,6 +212,7 @@
   border-bottom: 2px solid #eee;
   padding-bottom: 5px;
   color: #222;
+  text-align: center;
 }
 
 .readme-modal h3 {
@@ -200,36 +237,4 @@
 
 .readme-modal li {
   margin-bottom: 6px;
-}
-
-@media (max-width: 1024px) {
-  .modal-content {
-    max-width: 70%;
-  }
-}
-
-@media (max-width: 768px) {
-  .modal-content {
-    max-width: 90%; 
-    margin: 5% auto;
-    padding: 16px;
-  }
-
-  .modal .close {
-    font-size: 24px; 
-    top: 8px; right: 12px;
-  }
-
-  .readme-modal h2 {
-    font-size: 20px;
-  }
-
-  .readme-modal h3 {
-    font-size: 16px;
-  }
-
-  .readme-modal p,
-  .readme-modal li {
-    font-size: 14px;
-  }
 }

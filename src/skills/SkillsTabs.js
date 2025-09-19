@@ -25,7 +25,7 @@ const tabs = [
     ]
   },
   {
-    label: "DevOps / Infra",
+    label: "DO/Infra",
     items: [
       { name: "AWS", desc: "클라우드 서비스를 활용하여 인프라를 구축하고 운영할 수 있습니다." },
       { name: "GitHub Pages", desc: "정적 웹사이트를 배포하고 호스팅할 수 있습니다." },
@@ -34,7 +34,7 @@ const tabs = [
     ]
   },
   {
-    label: "AI & API",
+    label: "AI/API",
     items: [
       { name: "OpenAI API", desc: "언어 모델을 활용한 AI 기능을 구현할 수 있습니다." },
       { name: "YOLO API", desc: "객체 인식을 활용하여 이미지나 영상에서 객체를 탐지할 수 있습니다." },
@@ -42,7 +42,7 @@ const tabs = [
     ]
   },
   {
-    label: "Tools & IDEs",
+    label: "Tools/IDEs",
     items: [
       { name: "Git", desc: "버전 관리를 통해 코드를 효율적으로 관리할 수 있습니다." },
       { name: "GitHub", desc: "코드 호스팅 및 협업 환경을 구성할 수 있습니다." },
