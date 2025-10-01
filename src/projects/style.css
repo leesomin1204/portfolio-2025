@@ -154,7 +154,6 @@
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 20px;
-  border-radius: 10px;
   max-width: 100%;     
   position: absolute;
   text-align: center;
@@ -171,20 +170,20 @@
   width: 32px;
   height: 32px;
   font-size: 20px;
-  color: #fff; /* 엑스 표시 색 */
-  background-color: rgba(120, 120, 120, 0.6); /* 연그레이 + 투명도 */
-  border-radius: 50%; /* 동그란 모양 */
+  color: #fff; 
+  background-color: rgba(120, 120, 120, 0.6); 
+  border-radius: 50%; 
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.2); /* 살짝 그림자 */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2); 
   transition: background-color 0.2s ease, transform 0.2s ease;
 }
 
 .modal .close:hover {
-  background-color: rgba(90, 90, 90, 0.8); /* 호버 시 진하게 */
-  transform: scale(1.1); /* 살짝 확대 */
+  background-color: rgba(90, 90, 90, 0.8); 
+  transform: scale(1.1); 
 }
 
 /* README 모달 */
@@ -227,7 +226,7 @@
   font-size: 22px;
   font-weight: bold;
   margin-bottom: 10px;
-  border-bottom: 2px solid #eee;
+  border-bottom: 4px solid #eee;
   padding-bottom: 5px;
   color: #222;
   text-align: center;
@@ -255,4 +254,32 @@
 
 .readme-modal li {
   margin-bottom: 6px;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+ul li {
+  margin-bottom: 12px;
+}
+
+ul li strong span {
+  display: block;           
+  width: 100%;                 
+  background-color: #f0f0f0;   
+  padding: 4px 8px;          
+  border-radius: 4px;         
+  box-sizing: border-box;     
+}
+
+ul li .description {
+  display: block;            
+  margin-top: 4px;           
+}
+
+p {
+  text-align: center;
+  margin: 20px 0; 
 }
