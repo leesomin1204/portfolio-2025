@@ -59,7 +59,7 @@ section {
   justify-content: center;  
   align-items: center;    
   color: #333;   
-  font-size: 17px;
+  font-size: 12px;
   text-align: center;
 }
 
@@ -184,15 +184,25 @@ section {
   margin-right: 8px;
   vertical-align: middle;
 }
-
 .profile-info a {
   text-decoration: none;
   color: #333;
-  transition: color 0.3s;
+  position: relative;
+  display: inline-block;
 }
 
-.profile-info a:hover {
-  text-decoration: underline;
-  text-decoration-thickness: 2px;
-  text-underline-offset: 4px;
+.profile-info a::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 0;
+  height: 1px; 
+  background: #333;
+  transition: width 0.3s ease, left 0.3s ease;
+}
+
+.profile-info a:hover::after {
+  width: 100%;
+  left: 0; 
 }
